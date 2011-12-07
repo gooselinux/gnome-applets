@@ -1,0 +1,11 @@
+diff -up gnome-applets-2.25.90/null_applet/GNOME_MixerApplet.server.in.no-mixer-icon gnome-applets-2.25.90/null_applet/GNOME_MixerApplet.server.in
+--- gnome-applets-2.25.90/null_applet/GNOME_MixerApplet.server.in.no-mixer-icon	2009-02-06 14:31:43.000000000 -0500
++++ gnome-applets-2.25.90/null_applet/GNOME_MixerApplet.server.in	2009-02-06 14:32:54.000000000 -0500
+@@ -11,7 +11,6 @@
+ 	</oaf_attribute>
+ 	<oaf_attribute name="name" type="string" _value="Volume Control (Deprecated)"/>
+ 	<oaf_attribute name="description" type="string" _value="Adjust the sound volume"/>
+-	<oaf_attribute name="panel:icon" type="string" value="multimedia-volume-control"/>
+ 	<oaf_attribute name="bugzilla:bugzilla" type="string" value="GNOME"/>
+         <oaf_attribute name="bugzilla:product" type="string" value="gnome-applets"/>
+         <oaf_attribute name="bugzilla:component" type="string" value="mixer"/>

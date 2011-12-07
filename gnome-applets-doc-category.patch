@@ -1,0 +1,12 @@
+diff -up gnome-applets-2.28.0/trashapplet/docs/trashapplet.omf.in.doc-category gnome-applets-2.28.0/trashapplet/docs/trashapplet.omf.in
+--- gnome-applets-2.28.0/trashapplet/docs/trashapplet.omf.in.doc-category	2010-05-03 19:09:50.271932626 -0400
++++ gnome-applets-2.28.0/trashapplet/docs/trashapplet.omf.in	2010-05-03 19:09:58.073185110 -0400
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <omf>
+   <resource>
+-    <subject category="GNOME|Applets|Accessories"/>
++    <subject category="GNOME|Accessories"/>
+     <type>user's guide</type>
+     <relation seriesid="42caf45e-f911-11d9-8964-8230c32a0993"/>
+     <rights type="GNU FDL" license.version="1.1" holder="Michiel Sikkes"/>

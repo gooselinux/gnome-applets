@@ -1,0 +1,16 @@
+diff -up gnome-applets-2.23.3/configure.in.use-builtin-apm gnome-applets-2.23.3/configure.in
+--- gnome-applets-2.23.3/configure.in.use-builtin-apm	2008-07-31 21:52:11.000000000 -0400
++++ gnome-applets-2.23.3/configure.in	2008-07-31 21:53:29.000000000 -0400
+@@ -414,12 +414,10 @@ if test x$disable_battstat = xno; then
+    case "${host}" in
+        powerpc-*-linux*)
+            NEED_LIBAPM=yes
+-           AC_CHECK_LIB(apm,apm_read,[HAVE_LIBAPM=yes],[HAVE_LIBAPM=no])
+ 	   ;;
+        # list of supported OS cores that use libapm
+        *-*-linux*)
+ 	   NEED_LIBAPM=yes
+-	   AC_CHECK_LIB(apm,apm_read,[HAVE_LIBAPM=yes],[HAVE_LIBAPM=no])
+ 	   ;;
+        # list of supported OS cores that do not use libapm
+        i386-*-freebsd*|*-*-netbsd*|*-*-openbsd*|*-*kfreebsd*-gnu)

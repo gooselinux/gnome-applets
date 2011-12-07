@@ -1,0 +1,14 @@
+--- gnome-applets-2.15.1.1/configure.in.dont-require-display	2006-08-02 11:43:36.000000000 -0400
++++ gnome-applets-2.15.1.1/configure.in	2006-08-02 11:44:55.000000000 -0400
+@@ -545,8 +545,9 @@ dnl *** invest-applet specific checks   
+ dnl ***************************************************************************
+ 
+ if test "x$HAVE_PYGTK" = "xyes" -a "x$HAVE_PYHDRS" = "xyes"; then
+-	AM_CHECK_PYMOD(gnomeapplet,,
+-			BUILD_INVEST_APPLET="yes", BUILD_INVEST_APPLET="no")
++dnl	AM_CHECK_PYMOD(gnomeapplet,,
++dnl			BUILD_INVEST_APPLET="yes", BUILD_INVEST_APPLET="no")
++	BUILD_INVEST_APPLET="yes"
+ else
+ 	BUILD_INVEST_APPLET="no"
+ fi

@@ -1,0 +1,15 @@
+--- gnome-applets-2.18.0/gweather/gweather-pref.c.fix-find	2007-03-30 14:41:33.000000000 -0400
++++ gnome-applets-2.18.0/gweather/gweather-pref.c	2007-03-30 16:59:27.000000000 -0400
+@@ -618,8 +618,10 @@
+ 
+ 	if (go_parent) {
+ 		iter_parent = *iter;
+-		if (gtk_tree_model_iter_parent (model, iter, &iter_parent) && gtk_tree_model_iter_next (model, iter)) {
+-			return find_location (model, iter, location, TRUE);
++                while (gtk_tree_model_iter_parent (model, iter, &iter_parent)) {
++			if (gtk_tree_model_iter_next (model, iter))
++				return find_location (model, iter, location, TRUE);
++			iter_parent = *iter;
+ 		}
+ 	}
+ 
